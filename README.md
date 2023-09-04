@@ -32,7 +32,7 @@ To get started with this project, follow these steps:
 
 1. Clone this repository to your local machine using the following command:
    ```
-   git clone https://github.com/yourusername/flight-delay-prediction.git
+   git clone https://github.com/yourusername/SkySage-Navigating-Delays-with-Data-driven-Precision.git
    ```
 
 2. Install the required libraries and dependencies using:
