@@ -1,7 +1,7 @@
 # SkySage-Navigating-Delays-with-Data-driven-Precision
 
 
-![Flight Delays](https://example.com/flight_delays.jpg)
+![Flight Delays](https://github.com/saikumar28102000/SkySage-Navigating-Delays-with-Data-driven-Precision/blob/main/white-alarm-clock-airplane-background-viva-magenta.jpg)
 
 Welcome to the Flight Delay Prediction Project! This repository contains the code and resources for a machine learning project focused on predicting departure delays caused by adverse weather conditions at major US airports. By combining historical flight data and real-time weather information, the project aims to enhance the accuracy of delay predictions, optimize operational efficiency, and improve customer satisfaction within the airline industry.
 
