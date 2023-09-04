@@ -45,24 +45,3 @@ To get started with this project, follow these steps:
    python app.py
    ```
 
-4. Access the web interface by opening your browser and navigating to `http://localhost:5000`.
-
-## Contributions
-
-Contributions to this project are welcome! If you want to contribute, please follow these steps:
-
-1. Fork this repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them.
-4. Push the changes to your fork.
-5. Submit a pull request to this repository.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
-
-For questions or inquiries about this project, please contact [project@email.com](mailto:project@email.com).
-
-Let's work together to improve flight delay predictions and enhance the travel experience! 🛫✈️
