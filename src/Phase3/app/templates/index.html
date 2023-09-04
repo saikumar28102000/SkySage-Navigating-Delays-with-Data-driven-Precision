@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flight Delay Prediction</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+
+
+body {
+  background-image: url("/static/images/bg1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+      .container-box {
+        background-color: #111;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 0 auto;
+        max-width: 500px;
+        margin-top: 100px;
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.3);
+      }
+      .form-control {
+        background-color: #222;
+        border: 1px solid #ff3333;
+        color: #fff;
+      }
+      .btn-primary {
+        background-color: #ff3333;
+        border-color: #ff3333;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div class="container-box">
+      <h1 class="text-center text-light mb-5">Flight Delay Prediction</h1>
+      <form action="/" method="POST">
+        <div class="form-group">
+          <label for="dayOfMonth" class="text-light">Day of Month:</label>
+          <select class="form-control" name="dayOfMonth">
+            <option value="">Select Day</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+            <option value="28">28</option>
+            <option value="29">29</option>
+            <option value="30">30</option>
+            <option value="31">31</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="month" class="text-light">Month:</label>
+          <select class="form-control" name="month">
+            <option value="">Select Month</option>
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="year" class="text-light">Year:</label>
+          <input type="number" class="form-control" name="year">
+        </div>
+        <div class="form-group">
+          <label for="Origin" class="text-light">Origin:</label>
+          <select class="form-control" name="Origin">
+            <option value="ATL">ATL</option>
+            <option value="CLT">CLT</option>
+            <option value="DEN">DEN</option>
+            <option value="DFW">DFW</option>
+            <option value="EWR">EWR</option>
+            <option value="IAH">IAH</option>
+            <option value="JFK">JFK</option>
+            <option value="LAS">LAS</option>
+            <option value="LAX">LAX</option>
+            <option value="MCO">MCO</option>
+            <option value="MIA">MIA</option>
+            <option value="ORD">ORD</option>
+            <option value="PHX">PHX</option>
+            <option value="SEA">SEA</option>
+            <option value="SFO">SFO</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="Dest" class="text-light">Destination:</label>
+          <select class="form-control" name="Dest">
+            <option value="ATL">ATL</option>
+            <option value="CLT">CLT</option>
+            <option value="DEN">DEN</option>
+            <option value="DFW">DFW</option>
+            <option value="EWR">EWR</option>
+            <option value="IAH">IAH</option>
+            <option value="JFK">JFK</option>
+            <option value="LAS">LAS</option>
+            <option value="LAX">LAX</option>
+            <option value="MCO">MCO</option>
+            <option value="MIA">MIA</option>
+            <option value="ORD">ORD</option>
+            <option value="PHX">PHX</option>
+            <option value="SEA">SEA</option>
+            <option value="SFO">SFO</option>
+          </select>
+        </div>
+        
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </form>
+    </br>
+      <h5 style="color: white;"> Delay Prediction:</h5>
+      <p style="color: white;">{{ prediction }}</p>
+
+    </div>
+
+    <div>
+    {{ plt1 |safe }}
+    <p>{{ranges |safe}}</p>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
