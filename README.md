@@ -20,7 +20,7 @@ Flight delays have a significant impact on airlines, passengers, and operational
 
 ### Phases
 
-1. **Dataset Formation and ETL**: This phase involves creating a robust ETL pipeline using Azure Data Factory. Data is extracted from the US Weather API and the Aviation Stack API, transformed, cleaned, and merged into a comprehensive dataset.
+1. **Dataset Formation and ETL**: This phase involves creating a robust ETL pipeline using Azure Data Factory. Data is extracted from the Open Weather API and the Aviation Stack API, transformed, cleaned, and merged into a comprehensive dataset.
    
 2. **Regression Models**: Various regression models, including Linear Regression, K-Neighbors Regressor, Decision Tree Regressor, Random Forest Regressor, and XGBoost, are explored. Model performance is evaluated using metrics such as RMSE, MAE, and R-squared. The top-performing model is the XGBoost model with hyperparameter tuning.
 
